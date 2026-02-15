@@ -46,7 +46,7 @@ Significant performance boost for analytical queries. The system checks Redis fi
 Configure Environment:Bashcp .env.example .env
 Launch the Stack:Bashdocker-compose up --build
 The API will be live at http://localhost:8000.🧪 TestingThe project includes both unit tests for core logic and integration tests for API endpoints.Run tests inside the container:Bashdocker-compose exec app npm test
-## Repository StructurePlaintext.
+## Repository
 ├── src/
 │   ├── api/            # Route definitions
 │   ├── config/         # App configuration & settings
@@ -56,7 +56,7 @@ The API will be live at http://localhost:8000.🧪 TestingThe project includes b
 ├── .env.example        # Environment template
 ├── docker-compose.yml  # Orchestration
 └── Dockerfile          # Container build spec
-## API Endpoints SummaryMethodEndpointDescription
+## API Endpoints 
 GET/healthService 
 Redis health check POST/api/metrics
 Ingest new telemetry data (Rate Limited)GET/api/metrics/summaryGet 
